@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Usługi Transportowe Autobusem – Janusz Łysik</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+      background: #f4f6f8;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, #004aad, #0073e6);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: fadeInDown 1s ease;
+    }
+    header p {
+      font-size: 1.2rem;
+      animation: fadeInUp 1.2s ease;
+    }
+    nav {
+      background: #003580;
+      text-align: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffcc00;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #004aad;
+      font-size: 2rem;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    footer {
+      background: #004aad;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+    }
+    iframe {
+      width: 100%;
+      height: 350px;
+      border: 0;
+      border-radius: 8px;
+    }
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Usługi Transportowe Autobusem</h1>
+    <p>Janusz Łysik – Profesjonalny przewóz osób od 1991 roku</p>
+  </header>
+
+  <nav>
+    <a href="#o-firmie">O firmie</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#kontakt">Kontakt</a>
+  </nav>
+
+  <section id="o-firmie">
+    <h2>O firmie</h2>
+    <p>Firma <strong>Usługi Transportowe Autobusem – Janusz Łysik</strong> działa od 1991 roku, oferując komfortowy i bezpieczny przewóz osób na terenie Polski i za granicą. Nasza flota obejmuje nowoczesne autobusy wyposażone w klimatyzację, wygodne siedzenia i przestrzeń bagażową. Zatrudniamy doświadczonych kierowców, którzy dbają o punktualność i bezpieczeństwo podróży.</p>
+  </section>
+
+  <section id="oferta">
+    <h2>Oferta</h2>
+    <div class="services">
+      <div class="card">
+        <h3>Przewozy krajowe</h3>
+        <p>Obsługujemy wycieczki szkolne, wyjazdy integracyjne, wydarzenia sportowe i imprezy okolicznościowe.</p>
+      </div>
+      <div class="card">
+        <h3>Przewozy międzynarodowe</h3>
+        <p>Realizujemy przejazdy do krajów Unii Europejskiej, zapewniając komfort i konkurencyjne ceny.</p>
+      </div>
+      <div class="card">
+        <h3>Transport na zamówienie</h3>
+        <p>Dopasowujemy usługę do indywidualnych potrzeb – od małych grup po duże wydarzenia.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt">
+    <h2>Kontakt</h2>
+    <p><strong>Adres:</strong> Mazowiecka 34, 05-462 Malcanów</p>
+    <p><strong>Telefon:</strong> <a href="tel:+48603307764">+48 603 307 764</a></p>
+    <p><strong>Email:</strong> <a href="mailto:kontakt@transport-lysik.pl">kontakt@transport-lysik.pl</a></p>
+
+    <h3>Znajdź nas</h3>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2444.74121793056!2d21.3710774!3d52.1483073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471f2b003da79c69%3A0x3f978be870d119b2!2sUs%C5%82ugi%20Transportowe%20Autobusem%20-%20Janusz%20%C5%81ysik!5e0!3m2!1spl!2spl!4v1690000000000"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Usługi Transportowe Autobusem – Janusz Łysik</p>
+  </footer>
+
+  <script>
+    // Animacja kart przy przewijaniu
+    const cards = document.querySelectorAll('.card');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < triggerBottom) {
+          card.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
